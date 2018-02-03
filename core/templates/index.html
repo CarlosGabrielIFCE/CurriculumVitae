@@ -1,306 +1,437 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'icon/favicon.png' %}">
 
     <title>CV - Carlos Gabriel</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-    <link href="{% static 'vendor/devicons/css/devicons.min.css' %}" rel="stylesheet">
-    <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/resume.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script> 
+    <script src="{% static 'js/Chart.js' %}"></script>
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-  <body id="page-top">
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Carlos Gabriel</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'img/profil.jpg' %}" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experiência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Tecnologias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Certificações</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div id="section-topbar">
+    <div id="topbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="dropdown">
+            <ul id="nav" class="nav">
+              <li class="menu-item"><a class="smoothScroll" href="#about" title="Sobre"><i class="icon-user"></i></a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resumo"><i class="icon-file"></i></a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#skills" title="Tecnologias"><i class="glyphicon glyphicon-cog"></i></a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#work" title="Trabalhos"><i class="icon-briefcase"></i></a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contato"><i class="icon-envelope"></i></a></li>
+            </ul><!--/ uL#nav -->
+          </div><!-- /.dropdown -->
 
-    <div class="container-fluid p-0">
+          <div class="clear"></div>
+        </div><!--/.row -->
+      </div><!--/.container -->
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Carlos
-            <span class="text-primary">Gabriel</span>
+      <div class="clear"></div>
+    </div><!--/ #topbar-inner -->
+  </div><!--/ #section-topbar -->
+  
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <h1>Carlos Gabriel</h1>
+          <h3>Designer e Desenvolvedor de Sites Freelancer | carloscms2009@gmail.com</h3>
+          <h1 id="icones">  
+            <a href="https://www.facebook.com/carlos.ramosdasilva.37"><i class="icon-facebook"></i></a>
+            <a href="https://github.com/carlosgabrielIFCE"><i class="icon-github"></i></a>
+            <a href="https://Instagram.com/caaarlosgabe_"><i class="icon-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-gabriel-ifce"><i class="icon-linkedin"></i></a>
+            <!--<a href="#"><i class="icon-apple"></i></a>-->
           </h1>
-          <div class="subheading mb-5">Avenida Borges de Melo, 1885 · Fortaleza, CE · (85) 99863-4578 ·
-            <a href="mailto:carloscms2009@gmail.com">carloscms2009@gmail.com</a>
-          </div>
-          <p class="mb-5">Acadêmico de Engenharia de Computação do Instituto Federal do Ceará, Desenvolvedor de sites e aplicativos utilizando o
+        </div><!--/.col-lg-12 -->
+      </div><!--/.row -->
+    </div><!--/.container -->
+  </div><!--/.#headerwrap -->
+
+  <section id="about" name="about"></section>
+  <div id="intro">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>SOBRE</h5>
+        </div>
+        <div class="col-lg-6">
+          <p>Acadêmico de Engenharia de Computação do Instituto Federal do Ceará, Desenvolvedor de sites e aplicativos utilizando o
           Framework Django, Ionic 2.0 e Designer Freelancer, meu foco principal é empreender, desenvolver programas e
            projetos de design, assim como projetos de automação.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/carlos.ramosdasilva.37">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://Instagram.com/caaarlosgabe_">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/carlos-gabriel-ifce">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/carlosgabrielIFCE">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
         </div>
-      </section>
+        <div class="col-lg-3">
+          <p><a href="https://drive.google.com/open?id=12beL9VtteWysDyOwWbw9nQ6Fsb7GKoyS"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+        </div>
+        
+      </div><!--/.row -->
+    </div><!--/.container -->
+  </div><!--/ #intro -->
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experiência</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Bolsista de Programação</h3>
-              <div class="subheading mb-3">Instituto Federal do Ceará</div>
-              <p>Durante o semestre 2017.2, trabalhei como Monitor de Programação, auxiliando os alunos
-              das cadeiras de Introdução à Programação, Programação Orientada à Objetos e Estrutura de Dados.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Julho 2017 - Dezembro 2017</span>
-            </div>
-          </div>
+  <section id="resume" name="resume"></section>
+  <!--EDUCATION DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Desenvolvedor de sites</h3>
-              <div class="subheading mb-3">Freelancer</div>
-              <p>Durante as férias tive a oportunidade de estudar à fundo sobre o Framework de Desenvolvimento de sites Django, e,
-              com os conhecimentos adquiridos, pude desenvolver este site, além do site da minha equipe de Desenvolvedores.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Dezembro 2017 - Hoje</span>
-            </div>
-          </div>
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EDUCAÇÃO</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><t>Acadêmico de Engenharia da Computação</t><br/>
+            Instituto Federal do Ceará <br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>Previsão de conclusão - Junho 2019</sm><br/>
+          <imp><sm>EM PROGRESSO</sm></imp>
+          </p>
+        </div>
+  
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Ensino Fundamental e Médio</t><br/>
+            Colégio Militar de Fortaleza<br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>FEVEREIRO 2018 - DEZEMBRO 2014</sm></p>
+        </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Designer</h3>
-              <div class="subheading mb-3">Freelancer</div>
-              <p>No segundo semestre de 2017, logrei no Curso de Design da Pixels Design e Tecnologia, e , com os conhecimentos
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Curso de Inglês Intermediário e Avançado</t><br/>
+            Instituto Brasil-Estados Unidos(IBEU)<br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>FEVEREIRO 2013 - JANEIRO 2015</sm></p>
+        </div>
+  
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/.container -->
+  
+  
+  <!--WORK DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EXPERIÊNCIA</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><t>Bolsista de Programação</t><br/>
+            Instituto Federal do Ceará<br/>
+          </p>
+          <p><more>Durante o semestre 2017.2, trabalhei como Monitor de Programação, auxiliando os alunos
+              das cadeiras de Introdução à Programação, Programação Orientada à Objetos e Estrutura de Dados.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>Julho 2017 - Dezembro 2017</sm></p>
+        </div>
+  
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Desenvolvedor de sites</t><br/>
+            Freelancer <br/>
+          </p>
+          <p><more>Durante as férias tive a oportunidade de estudar à fundo sobre o Framework de Desenvolvimento de sites Django, e,
+              com os conhecimentos adquiridos, pude desenvolver este site, além do site da minha equipe de Desenvolvedores.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>Dezembro 2017 - Hoje</sm></p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Designer</t><br/>
+            Freelancer<br/>
+          </p>
+          <p><more>No segundo semestre de 2017, logrei no Curso de Design da Pixels Design e Tecnologia, e , com os conhecimentos
               adquiridos, tive a oportunidade de desenvolver três projetos, sendo o mais satisfatório a logomarca da minha equipe
-            de Desenvolvimento.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Agosto 2017 - Hoje</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">CEO ThinkIdeas</h3>
-              <div class="subheading mb-3">Instituto Federal do Ceará</div>
-              <p>No ano de 2016, tive a iniciativa, juntamente com três amigos, de montar e abrir uma equipe de desenvolvedores,
-              focados em aprender sobre Desenvolvimento Web e Mobile, assim como projetos de automação, equipe denominada ThinkIdeas.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Novembro 2016 - Hoje</span>
-            </div>
-          </div>
-
+            de Desenvolvimento.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>Agosto 2017 - Hoje</sm></p>
         </div>
 
-      </section>
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/.container -->
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Educação</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Colégio Militar de Fortaleza</h3>
-              <div class="subheading mb-3">Ensino Fundamental e Médio</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Janeiro 2008- Dezembro 2014</span>
-            </div>
+  <!--AWARDS DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>CERTIFICAÇÕES</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><t>Curso de Desenvolvimento Mobile com Ionic 2.0</t><br/>
+            Universidade do Trabalho Digital<br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>ABRIL 2017 - JUNHO 2017</sm></p>
+        </div>
+  
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Curso de Arduino ministrado pelo PET de Engenharias Renováveis(UFC)</t><br/>
+            Universidade Federal do Ceará
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>2017</sm></p>
+        </div>
+    
+    </div><!--/.row -->
+    <br>
+  </div><!--/.container -->
+  
+  
+  <!--SKILLS DESCRIPTION -->
+  <section id="skills"></section>
+  <div id="skillswrap">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>Tecnologias</h5>
+          </div>
+          <div class="col-lg-3 centered">
+            <canvas id="javascript" height="130" width="130"></canvas>
+            <p>Django Framework</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 70,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 30,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+          <div class="col-lg-3 centered">
+            <canvas id="bootstrap" height="130" width="130"></canvas>
+            <p>Bootstrap</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 65,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 35,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+          <div class="col-lg-3 centered">
+            <canvas id="wordpress" height="130" width="130"></canvas>
+            <p>Ionic v2.0</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 65,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 35,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+          
+          <div class="col-lg-3 col-lg-offset-3 centered">
+            <canvas id="html" height="130" width="130"></canvas>
+            <p>HTML/CSS</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 65,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 35,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+          <div class="col-lg-3 centered">
+            <canvas id="photoshop" height="130" width="130"></canvas>
+            <p>Photoshop</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 50,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 50,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+          <div class="col-lg-3 centered">
+            <canvas id="illustrator" height="130" width="130"></canvas>
+            <p>Illustrator</p>
+            <br>
+            <script>
+              var doughnutData = [
+                  {
+                    value: 70,
+                    color:"#1abc9c"
+                  },
+                  {
+                    value : 30,
+                    color : "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+            </script>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Instituto Federal do Ceará</h3>
-              <div class="subheading mb-3">Acadêmico de Engenharia da Computação</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Junho 2016 - Junho 2020</span>
-            </div>
-          </div>
+      </div><!--/.row -->
+      <br>
+    </div><!--/.container -->
+  </div><!--/ #skillswrap -->
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Instituto Brasil-Estados Unidos</h3>
-              <div class="subheading mb-3">Curso Intermediário e Avançado de Inglês</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Janeiro 2013 - Janeiro 2015</span>
-            </div>
-          </div>
 
+
+  <section id="work" name="work"></section>
+  <!--PORTFOLIO DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>PORTFOLIO</h5>
         </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Tecnologias</h2>
-
-          <div class="subheading mb-3">Linguagens de Programação &amp; Ferramentas</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-django"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-ionic"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-joomla"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-heroku"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Fluxo de trabalho</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Design Responsivo</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Aplicações Híbridas</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Métodos ágeis de Desenvolvimento &amp; Scrum</li>
-          </ul>
+        <div class="col-lg-6">
+          <p><img class="img-responsive" src="{% static 'img/port01.gif' %}" alt=""></p>
         </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interesses</h2>
-          <p>Além da minha vida como estudante e desenvolvedor web, eu gosto de assistir séries, gosto de tocar violão,
-            sair com os amigos e sou interessado nas notícias do dia-a-dia.</p>
-          <p class="mb-0">Dentro de minha área, tenho um desejo muito grande de empreender,
-            de aprender tecnologias novas e de fazer aplicativos e sites que sejam robustos e satisfatórios aos usuários.</p>
+        <div class="col-lg-3">
+          <p>LOGOMARCA E SITE DA THINKIDEAS</p>
+        <p><more>Com os conhecimentos de Adobe Illustrator, pude desenvolver a logomarca da minha equipe de desenvolvedores, o que 
+        foi meu trabalho mais satisfatório. Pude também desenvolver o site da equipe para contratação dos nossos serviços.
+        Link: thinkideas.herokuapp.com<br/><br/>
+          <sm><i class="icon-tag"></i>web design</sm></more> 
+        </p>
         </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Certificações</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Curso de Desenvolvimento Mobile com a plataforma híbrida Ionic 2.0(UTD)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Curso básico de Arduino ministrado pelo PET de Engenharias Renováveis da UFC</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Diploma de Curso de Inglês - INSTITUTO BRASIL-ESTADOS UNIDOS(IBEU)</li>
-          </ul>
+  
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="{% static 'img/port02.jpg'%}" alt=""></p>
         </div>
-      </section>
+        <div class="col-lg-3">
+            <p>PANFLETO DA GAME LANCHES</p>
+          <p><more>Desenvolvi, também, com os conhecimentos adquiridos em Adobe Illustrator, o Panfleto da vendedora de salgados Meire, estabelecimento denominado Game Lanches<br/><br/>
+            <sm><i class="icon-tag"></i> design</sm></more> 
+          </p>
+        </div>
+        
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="{% static 'img/port03.jpg' %}" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+            <p>PANFLETO DA JMEGA INFORMÁTICA</p>
+          <p><more>Por fim, desenvolvi o panfleto e o cartão de visitas da Assistência técnica de meu pai, denominada Jmega Informática.<br/><br/>
+            <sm><i class="icon-tag"></i> web design</sm></more> 
+          </p>
+        </div>
+    
+    </div><!--/.row -->
+    <br>
+    <br>
+  </div><!--/.container -->
+  
 
+
+  <section id="contact" name="contact"></section>
+  <!--FOOTER DESCRIPTION -->
+  <div id="footwrap">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>CONTATO</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><t>Email</t><br/>
+            carloscms2009@gmail.com <br/>
+          </p>
+          <p><t>Endereço</t><br/>
+            Avenida Borges de Melo, 1885 <br/>
+             Bloco 1, Apartamento 404<br/>
+            Fortaleza, Ceará. <br/>
+          </p>
+          <p><t>Celular</t><br/>
+            (85) 99863-4578 <br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>REDES SOCIAIS</sm></p>
+          <h2>
+            <a href="https://www.facebook.com/carlos.ramosdasilva.37"><i class="icon-facebook"></i></a>
+            <a href="https://github.com/carlosgabrielIFCE"><i class="icon-github"></i></a>
+            <a href="https://Instagram.com/caaarlosgabe_"><i class="icon-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-gabriel-ifce"><i class="icon-linkedin"></i></a>
+          </h2>
+        </div>
+      </div><!--/.row -->
+    </div><!--/.container -->
+  </div><!--/ #footer -->
+  
+  <div id="c">
+    <div class="container">
+      <p>Template created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+    
     </div>
+  </div>
+  
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/resume.min.js' %}"></script>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js'%}"></script>
   </body>
-
 </html>
