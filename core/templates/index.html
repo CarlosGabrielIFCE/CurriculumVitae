@@ -1,438 +1,691 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="{% static 'icon/favicon.png' %}">
 
-    <title>CV - Carlos Gabriel</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CV - Carlos Gabriel">
+  <meta name="keywords" content="onepage, resume, CV HTML template, personal Vcard, html resume, free resume template, free HTML template, free bootstrap template, personal portfolio, free html portfolio">
+	<meta name="author" content="http://trendytheme.net/">
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+	<title>CV - Carlos Gabriel</title>
 
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    
-  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script> 
-    <script src="{% static 'js/Chart.js' %}"></script>
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'assets/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="{% static 'assets/css/style.css' %}" rel="stylesheet" media="screen">
+  <!-- Responsive CSS -->
+  <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-  <body data-spy="scroll" data-offset="0" data-target="#nav">
+  <link rel="shortcut icon" href="{% static 'assets/images/ico/favicon.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'assets/images/ico/apple-touch-icon-144-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'assets/images/ico/apple-touch-icon-114-precomposed.png'%}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'assets/images/ico/apple-touch-icon-72-precomposed.png'%}">
+  <link rel="apple-touch-icon-precomposed" href="{% static 'assets/images/ico/apple-touch-icon-57-precomposed.png' %}">
 
-  <div id="section-topbar">
-    <div id="topbar-inner">
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+
+	<!-- Home Section -->
+	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+		<div class="intro">
+			<div class="intro-sub">Carlos Gabriel</div>
+			<h1>Design e <span>Desenvolvimento Web</span></h1>
+			<p>Eu sou um acadêmico do Instituto Federal do Ceará, Designer &amp; Desenvolvedor Freelancer<br>com uma mente empreendedora, focado em aprender novas linguagens e desenvolver<br>aplicativos com grande escalabilidade no mercado.</p>
+
+      <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/carlos.ramosdasilva.37"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://Instagram.com/caaarlosgabe_"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-gabriel-ifce"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/carlosgabrielIFCE"><i class="fa fa-github"></i></a></li>
+          <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+        </ul>
+      </div> <!-- /.social-icons -->
+		</div>
+
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section><!-- End Home Section -->
+
+
+
+
+	<!-- Navigation -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home"><img src="{% static 'assets/images/logo.png'%}" alt=""></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Início</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#resume">Resumo</a></li>
+						<li><a href="#skills">Habilidades</a></li>
+						<li><a href="#works">Trabalhos</a></li>
+            <li><a href="#contact">Contato</a></li>
+					</ul>
+				</div>
+			</div><!-- .container -->
+		</nav>
+	</header><!-- End Navigation -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Sobre mim</h2>
+
+        <div class="row">
+
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <img src="{% static 'assets/images/1.jpg' %}" alt="">
+              </div>
+              <ul>
+                <li><strong>Nome:</strong> Carlos Gabriel</li>
+                <li><strong>Data de Nascimento:</strong> 01 Julho 1997</li>
+                <li><strong>Endereço:</strong> Avenida Borges de Melo, 1885</li>
+                <li><strong>Nacionalidade:</strong> Brasileiro</li>
+                <li><strong>Celular:</strong> (85) 99863 4578</li>
+                <li><strong>Email:</strong> carloscms2009@gmail.com</li>
+              </ul>
+            </div>
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Objetivo</h3>
+              <p>Meu objetivo principal é aprender linguagens de programação voltadas para o mercado, Design gráfico, para, com o conhecimento adquirido, desenvolver projetos Web, aplicativos e projetos de Design Gráfico.</p>
+            </div>
+
+            <div class="short-info wow fadeInUp">
+              <h3>O que eu faço?</h3>
+              <p>Dentro dessa área, além de minha vida como acadêmico de Engenharia da Computação do Instituto Federal do Ceará, eu estudo linguagens de programação, Frameworks, e lancei minha vida como Desenvolvedor e Designer Freelancer.</p>
+
+              <ul class="list-check">
+                <li>Designer Gráfico</li>
+                <li>Desenvolvedor Web</li>
+                <li>Desenvolvedor Mobile</li>
+              </ul>
+            </div>
+
+
+            <div class="download-button">
+              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Entre em contato</a>
+              <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=12beL9VtteWysDyOwWbw9nQ6Fsb7GKoyS"><i class="fa fa-download"></i>Curriculum Vitae</a>
+            </div>
+          </div>
+
+
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section><!-- End About Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resumo</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Educação</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">2008-2014</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Diploma do Ensino Médio</h3>
+                                            <span>Colégio Militar de Fortaleza(CMF)</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Em 2014, tive a minha formatura de graduando do Ensino Médio, no Colégio Militar de Fortaleza, o que foi uma conquista maravilhosa para mim.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2013-2015</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Certificado - INSTITUTO BRASIL-ESTADOS UNIDOS</h3>
+                                            <span>Instituto Brasil-Estados Unidos no Ceará</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>No ano de 2015, terminei meu curso de Inglês pelo IBEU, algo que sempre almejei, por conta da minha vontade de morar fora.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2016 - Hoje</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Bacharelado em Engenharia da Computação</h3>
+                                            <span>Instituto Federal do Ceará</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Em 2016, fui aprovado no Enem em Engenharia da Computação, após ter estudado um ano na Uece, minha maior conquista até hoje.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experiência</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2017 - Hoje</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Designer </h3>
+                                            <span>Freelancer</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>No ano de 2017, logrei no curso de Design Gráfico da Pixels Design e Tecnologia, e, com os conhecimentos adquiridos, desenvolvo projetos de Design.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2017 - Hoje</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Desenvolvedor Web e Mobile</h3>
+                                            <span>Freelancer</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>No ano de 2017, realizei o curso de Desenvolvimento Mobile com Ionic v2.0, e tive a oportunidade de estudar o Framework Django v2.0.1.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2017 - 2017</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Bolsista de Programação</h3>
+                                            <span>Instituto Federal do Ceará</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>No ano de 2017, fui monitor das cadeiras de Introdução à Programação, Programação Orientada à Objetos e Estrutura de Dados do curso.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2016 - Hoje</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>CEO ThinkIdeas</h3>
+                                            <span></span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>No ano de 2016, eu e mais 3 amigos tivemos a iniciativa de criar uma empresa, com o foco de aprender novas linguagens, e desenvolver projetos de automação, projetos de Design e Aplicativos Mobile/Web.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Habilidades</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Django Framework</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" ><span>65%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Bootstrap</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" ><span>55%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Ionic v2.0</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>HTML5/CSS3</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Adobe Photoshop</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Adobe Illustrator</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" ><span>65%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <div class="skill-chart text-center">
+          <h3>Outras Habilidades</h3>
+        </div>
+
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="91" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Liderança</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="50" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Criatividade</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="50" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Gestão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Proatividade</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="45" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Marketing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="95" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Motivação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+
+
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Trabalhos</h2>
+
+        <ul class="list-inline" id="filter">
+            <li><a class="active" data-group="all">Todos</a></li>
+            <li><a data-group="design">Design</a></li>
+            <li><a data-group="web">Web</a></li>
+            <li><a data-group="interface">Interface</a></li>
+            <li><a data-group="identety">Identidade</a></li>
+        </ul>
+
+        <div class="row">
+          <div id="grid">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="{% static 'assets/images/works/port01.gif' %}"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="{% static 'assets/images/works/port01.gif'%}" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Logomarca da ThinkIdeas</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+
+
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="{% static 'assets/images/works/port02.jpg' %}"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="{% static 'assets/images/works/port02.jpg' %}" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Panfleto da Gameju Lanches</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="{% static 'assets/images/works/port03.jpg' %}"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="{% static 'assets/images/works/port03.jpg' %}" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Panfleto da Jmega Informática</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="{% static 'assets/images/works/port04.png' %}"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://thinkideas.herokuapp.com"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="{% static 'assets/images/works/port04.png' %}" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Site da ThinkIdeas Developers</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="{% static 'assets/images/works/port05.png'%}"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://carlosgabriel.herokuapp.com"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="{% static 'assets/images/works/port05.png'%}" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Site do Curriculum Vitae</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+          </div><!-- /#grid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Works Section -->
+
+
+    <!-- Facts Section -->
+    <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="tt-overlay-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="count-wrap">
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-flask"></i>
+                  <h3 class="timer">1</h3>
+                  <p>Ano de Experiência</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-thumbs-up"></i>
+                  <h3 class="timer">5</h3>
+                  <p>Projetos Realizados</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-users"></i>
+                  <h3 class="timer">5</h3>
+                  <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-trophy"></i>
+                  <h3 class="timer">3</h3>
+                  <p>Certificações</p>
+                </div>
+              </div><!-- /count-wrap -->
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div>
+    </section> <!-- End Facts Section -->
+
+
+    <!-- Hire Section -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="hire-section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Estou disponível para projetos Freelancer!</h2>
+              <a href="#" class="btn btn-default">Contrate-me</a>
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.hire-section-bg -->
+    </section><!-- End Hire Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Entre em contato</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-form">
+              {% if success %}
+                <h3>Mensagem enviada com sucesso</h3>
+              {% endif %}
+              <strong>Mande-me uma mensagem</strong>
+              <form name="contact-form" id="contactForm" method="post">
+                {% csrf_token %}
+                <fieldset>
+                {% for field in form %}
+                <div class="form-group">
+                  {{ field.label_tag }}
+                  {{ field }}
+                  {% if field.errors %}
+                  <ul class="errorlist">
+                    {% for error in field.errors %}
+                      <li>{{ error }}</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </fieldset>
+              </form>
+            </div><!-- /.contact-form -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="row center-xs">
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Endereço</strong>
+                  Avenida Borges de Melo, 1885,<br>
+                  Fortaleza, CE<br>
+                </address>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-mobile"></i>
+                <div class="contact-number">
+                  <strong>Celular</strong>
+                  (85)99863-4578
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-map">
+                <div id="mapCanvas" class="map-canvas"></div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Contact Section -->
+
+
+	<!-- Footer Section -->
+    <footer class="footer-wrapper">
       <div class="container">
         <div class="row">
-          <div class="dropdown">
-            <ul id="nav" class="nav">
-              <li class="menu-item"><a class="smoothScroll" href="#about" title="Sobre"><i class="icon-user"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resumo"><i class="icon-file"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#skills" title="Tecnologias"><i class="glyphicon glyphicon-cog"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#work" title="Trabalhos"><i class="icon-briefcase"></i></a></li>
-              <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contato"><i class="icon-envelope"></i></a></li>
-            </ul><!--/ uL#nav -->
-          </div><!-- /.dropdown -->
-
-          <div class="clear"></div>
-        </div><!--/.row -->
-      </div><!--/.container -->
-
-      <div class="clear"></div>
-    </div><!--/ #topbar-inner -->
-  </div><!--/ #section-topbar -->
-  
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-12">
-          <h1>Carlos Gabriel</h1>
-          <h3>Designer e Desenvolvedor de Sites Freelancer </h3>
-          <h3>carloscms2009@gmail.com | (85)99863-4578</h3>
-          <h1 id="icones">  
-            <a href="https://www.facebook.com/carlos.ramosdasilva.37"><i class="icon-facebook"></i></a>
-            <a href="https://github.com/carlosgabrielIFCE"><i class="icon-github"></i></a>
-            <a href="https://Instagram.com/caaarlosgabe_"><i class="icon-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/carlos-gabriel-ifce"><i class="icon-linkedin"></i></a>
-            <!--<a href="#"><i class="icon-apple"></i></a>-->
-          </h1>
-        </div><!--/.col-lg-12 -->
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/.#headerwrap -->
-
-  <section id="about" name="about"></section>
-  <div id="intro">
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>SOBRE</h5>
-        </div>
-        <div class="col-lg-6">
-          <p>Acadêmico de Engenharia de Computação do Instituto Federal do Ceará, Desenvolvedor de sites e aplicativos utilizando o
-          Framework Django, Ionic 2.0 e Designer Freelancer, meu foco principal é empreender, desenvolver programas e
-           projetos de design, assim como projetos de automação.</p>
-        </div>
-        <div class="col-lg-3">
-          <p><a href="https://drive.google.com/open?id=12beL9VtteWysDyOwWbw9nQ6Fsb7GKoyS"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
-        </div>
-        
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/ #intro -->
-
-
-  <section id="resume" name="resume"></section>
-  <!--EDUCATION DESCRIPTION -->
-  <div class="container desc">
-    <div class="row">
-
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>EDUCAÇÃO</h5>
-        </div>
-        <div class="col-lg-6">
-          <p><t>Acadêmico de Engenharia da Computação</t><br/>
-            Instituto Federal do Ceará <br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>Previsão de conclusão - Junho 2019</sm><br/>
-          <imp><sm>EM PROGRESSO</sm></imp>
-          </p>
-        </div>
-  
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Ensino Fundamental e Médio</t><br/>
-            Colégio Militar de Fortaleza<br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>FEVEREIRO 2018 - DEZEMBRO 2014</sm></p>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Curso de Inglês Intermediário e Avançado</t><br/>
-            Instituto Brasil-Estados Unidos(IBEU)<br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>FEVEREIRO 2013 - JANEIRO 2015</sm></p>
-        </div>
-  
-    </div><!--/.row -->
-    <br>
-    <hr>
-  </div><!--/.container -->
-  
-  
-  <!--WORK DESCRIPTION -->
-  <div class="container desc">
-    <div class="row">
-
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>EXPERIÊNCIA</h5>
-        </div>
-        <div class="col-lg-6">
-          <p><t>Bolsista de Programação</t><br/>
-            Instituto Federal do Ceará<br/>
-          </p>
-          <p><more>Durante o semestre 2017.2, trabalhei como Monitor de Programação, auxiliando os alunos
-              das cadeiras de Introdução à Programação, Programação Orientada à Objetos e Estrutura de Dados.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>Julho 2017 - Dezembro 2017</sm></p>
-        </div>
-  
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Desenvolvedor de sites</t><br/>
-            Freelancer <br/>
-          </p>
-          <p><more>Durante as férias tive a oportunidade de estudar à fundo sobre o Framework de Desenvolvimento de sites Django, e,
-              com os conhecimentos adquiridos, pude desenvolver este site, além do site da minha equipe de Desenvolvedores.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>Dezembro 2017 - Hoje</sm></p>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Designer</t><br/>
-            Freelancer<br/>
-          </p>
-          <p><more>No segundo semestre de 2017, logrei no Curso de Design da Pixels Design e Tecnologia, e , com os conhecimentos
-              adquiridos, tive a oportunidade de desenvolver três projetos, sendo o mais satisfatório a logomarca da minha equipe
-            de Desenvolvimento.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>Agosto 2017 - Hoje</sm></p>
-        </div>
-
-    </div><!--/.row -->
-    <br>
-    <hr>
-  </div><!--/.container -->
-
-
-  <!--AWARDS DESCRIPTION -->
-  <div class="container desc">
-    <div class="row">
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>CERTIFICAÇÕES</h5>
-        </div>
-        <div class="col-lg-6">
-          <p><t>Curso de Desenvolvimento Mobile com Ionic 2.0</t><br/>
-            Universidade do Trabalho Digital<br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>ABRIL 2017 - JUNHO 2017</sm></p>
-        </div>
-  
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Curso de Arduino ministrado pelo PET de Engenharias Renováveis(UFC)</t><br/>
-            Universidade Federal do Ceará
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>2017</sm></p>
-        </div>
-    
-    </div><!--/.row -->
-    <br>
-  </div><!--/.container -->
-  
-  
-  <!--SKILLS DESCRIPTION -->
-  <section id="skills"></section>
-  <div id="skillswrap">
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-2 col-lg-offset-1">
-            <h5>Tecnologias</h5>
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>&copy; TrendyTheme 2015. All rights reserved.</p>
+            </div>
           </div>
-          <div class="col-lg-3 centered">
-            <canvas id="javascript" height="130" width="130"></canvas>
-            <p>Django Framework</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 70,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 30,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-          <div class="col-lg-3 centered">
-            <canvas id="bootstrap" height="130" width="130"></canvas>
-            <p>Bootstrap</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 65,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 35,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-          <div class="col-lg-3 centered">
-            <canvas id="wordpress" height="130" width="130"></canvas>
-            <p>Ionic v2.0</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 65,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 35,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-          
-          <div class="col-lg-3 col-lg-offset-3 centered">
-            <canvas id="html" height="130" width="130"></canvas>
-            <p>HTML/CSS</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 65,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 35,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-          <div class="col-lg-3 centered">
-            <canvas id="photoshop" height="130" width="130"></canvas>
-            <p>Photoshop</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 50,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 50,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-          <div class="col-lg-3 centered">
-            <canvas id="illustrator" height="130" width="130"></canvas>
-            <p>Illustrator</p>
-            <br>
-            <script>
-              var doughnutData = [
-                  {
-                    value: 70,
-                    color:"#1abc9c"
-                  },
-                  {
-                    value : 30,
-                    color : "#ecf0f1"
-                  }
-                ];
-                var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
-            </script>
-          </div>
-
-      </div><!--/.row -->
-      <br>
-    </div><!--/.container -->
-  </div><!--/ #skillswrap -->
+        </div>
+      </div>
+    </footer><!-- End Footer Section -->
 
 
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
 
-  <section id="work" name="work"></section>
-  <!--PORTFOLIO DESCRIPTION -->
-  <div class="container desc">
-    <div class="row">
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>PORTFOLIO</h5>
-        </div>
-        <div class="col-lg-6">
-          <p><img class="img-responsive" src="{% static 'img/port01.gif' %}" alt=""></p>
-        </div>
-        <div class="col-lg-3">
-          <p>LOGOMARCA E SITE DA THINKIDEAS</p>
-        <p><more>Com os conhecimentos de Adobe Illustrator, pude desenvolver a logomarca da minha equipe de desenvolvedores, o que 
-        foi meu trabalho mais satisfatório. Pude também desenvolver o site da equipe para contratação dos nossos serviços.
-        Link: thinkideas.herokuapp.com<br/><br/>
-          <sm><i class="icon-tag"></i>web design</sm></more> 
-        </p>
-        </div>
-  
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><img class="img-responsive" src="{% static 'img/port02.jpg'%}" alt=""></p>
-        </div>
-        <div class="col-lg-3">
-            <p>PANFLETO DA GAME LANCHES</p>
-          <p><more>Desenvolvi, também, com os conhecimentos adquiridos em Adobe Illustrator, o Panfleto da vendedora de salgados Meire, estabelecimento denominado Game Lanches<br/><br/>
-            <sm><i class="icon-tag"></i> design</sm></more> 
-          </p>
-        </div>
-        
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><img class="img-responsive" src="{% static 'img/port03.jpg' %}" alt=""></p>
-        </div>
-        <div class="col-lg-3">
-            <p>PANFLETO DA JMEGA INFORMÁTICA</p>
-          <p><more>Por fim, desenvolvi o panfleto e o cartão de visitas da Assistência técnica de meu pai, denominada Jmega Informática.<br/><br/>
-            <sm><i class="icon-tag"></i> web design</sm></more> 
-          </p>
-        </div>
-    
-    </div><!--/.row -->
-    <br>
-    <br>
-  </div><!--/.container -->
-  
-
-
-  <section id="contact" name="contact"></section>
-  <!--FOOTER DESCRIPTION -->
-  <div id="footwrap">
-    <div class="container">
-      <div class="row">
-      
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>CONTATO</h5>
-        </div>
-        <div class="col-lg-6">
-          <p><t>Email</t><br/>
-            carloscms2009@gmail.com <br/>
-          </p>
-          <p><t>Endereço</t><br/>
-            Avenida Borges de Melo, 1885 <br/>
-             Bloco 1, Apartamento 404<br/>
-            Fortaleza, Ceará. <br/>
-          </p>
-          <p><t>Celular</t><br/>
-            (85) 99863-4578 <br/>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>REDES SOCIAIS</sm></p>
-          <h2>
-            <a href="https://www.facebook.com/carlos.ramosdasilva.37"><i class="icon-facebook"></i></a>
-            <a href="https://github.com/carlosgabrielIFCE"><i class="icon-github"></i></a>
-            <a href="https://Instagram.com/caaarlosgabe_"><i class="icon-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/carlos-gabriel-ifce"><i class="icon-linkedin"></i></a>
-          </h2>
-        </div>
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/ #footer -->
-  
-  <div id="c">
-    <div class="container">
-      <p>Template created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
-    
-    </div>
-  </div>
-  
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{% static 'js/bootstrap.js'%}"></script>
-  </body>
+	<!-- Javascript files -->
+	<script src="{% static 'assets/js/jquery.js' %}"></script>
+	<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.stellar.min.js'%}"></script>
+	<script src="{% static 'assets/js/jquery.sticky.js'%}"></script>
+  <script src="{% static 'assets/js/smoothscroll.js'%}"></script>
+	<script src="{% static 'assets/js/wow.min.js'%}"></script>
+  <script src="{% static 'assets/js/jquery.countTo.js'%}"></script>
+  <script src="{% static 'assets/js/jquery.inview.min.js'%}"></script>
+  <script src="{% static 'assets/js/jquery.easypiechart.js'%}"></script>
+  <script src="{% static 'assets/js/jquery.shuffle.min.js'%}"></script>
+  <script src="{% static 'assets/js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="{% static 'assets/js/jquery.fitvids.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="{% static 'assets/js/scripts.js'%}"></script>
+</body>
 </html>
